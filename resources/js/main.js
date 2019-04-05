@@ -1,26 +1,4 @@
-//// JavaScript Document
-//
-//// clock function
-//(function () {
-//	'use strict';
-//	document.addEventListener('DOMContentLoaded', function () {
-//		var c = document.getElementById('current-time');
-//
-//
-//
-//		setInterval(updateTime, 1000);
-//
-//		function updateTime() {
-//			var d = new Date();
-//			var sep = ':';
-//			if (d.getSeconds() % 2 === 1) sep = ' ';
-//
-//			c.innerHTML = d.getHours() + sep + d.getMinutes();
-//		}
-//	});
-//
-//
-//})();
+
 
 //function for greying out the estimate button if nothing is selected
 var state = document.getElementById('s-state');
