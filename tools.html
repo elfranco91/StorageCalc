@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tools</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+<link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+   <form novalidate class="cart" id="cart-hplus">
+  <div class="container-fluid">
+    
+    <div class="row" style ="border: 2px dotted white;">
+     
+      
+		<div class = "col-lg-3 col-md-3 col-sm-3">
+		  <h4 style="color: white;">Disk calculator</h4>
+        <div class="group state">
+          <select id="s-state" required>
+            <option value="">- select -</option>
+            <option value="WI">WI SSD 250 MBs</option>
+            <option value="RI">RI SSD 200 MBs</option>
+            <option value="15k">15K 175 IOPS</option>
+            <option value="10K">10K 125 IOPS</option>
+            <option value="7K">7K 80 IOPS</option>
+          </select>
+          <input type="text" id="ele1" name="ele1" placeholder="Disk Qty " />
+        </div>
+		
+        <p>
+          <input type="submit" value="Total" id="btn-estimate" disabled="" >
+          <input type="text" id="txt-estimate" placeholder="0.00 ">
+        </p>
+        </div> 
+<!-- bits and bytes converter-->
+		<div class ="col-lg-3 col-md-3 col-sm-3">
+		   <h4 style="color: white;">Bits and Bytes Converter</h4>
+        <div class="group state">
+          <select id="s-state2" required>
+            <option value="">- select -</option>
+            <option value="KM">KBPs - MBs</option>
+            <option value="MG">MBs - GBs</option>
+           
+          </select>
+          <input type="text" id="ele2" name="ele2" placeholder="Bits or Bytes" />
+        </div>
+        <p>
+          <input type="submit" value="Convert" id="btn-estimate2" disabled="" >
+          <input type="text" id="txt-estimate2" placeholder="0.00 " >
+        </p>
+       </div>
+<!-- Raid Calculator-->
+		  <div class ="col-lg-3 col-md-3 col-sm-3">
+		   <h4 style="color: white;">Raid Overhead Calculator</h4>
+        <div class="group state">
+          <select id="s-state3" required>
+            <option value="">- select -</option>
+            <option value="R10">Raid 10</option>
+            <option value="R10DM">Raid 10DM</option>
+			<option value="R5-5">Raid 5-5</option>
+			<option value="R5-9">Raid 5-9</option>
+			<option value="R6-6">Raid 6-6</option>
+            <option value="R6-10">Raid 6-10</option>
+           
+          </select>
+          <input type="text" id="ele3" name="ele3" placeholder="convert TB" />
+        </div>
+        <p><span></span>
+          <input type="submit" value="Convert" id="btn-estimate3" disabled="">
+          <input type="text" id="txt-estimate3" placeholder="0.00 ">
+        </p>
+       </div>
+		<!-- Card throughput -->
+		<div class ="col-lg-3 col-md-3 col-sm-3">
+		   <h4 style="color: white;">IO Card Throughput</h4>
+        <div class="group state">
+          <select id="s-state4" required>
+            <option value="">- select -</option>
+            <option value="IS-16">FE-ISCSI-16GB</option>
+            <option value="MG">MBs - GBs</option>
+          
+          </select>
+			 <input type="text" id="ele4" name="ele4" placeholder="PortCount" />
+        </div>
+        <p>
+          <input type="submit" value="Convert" id="btn-estimate4" disabled="" >
+          <input type="text" id="txt-estimate4" placeholder="0.00 " >
+        </p>
+       </div>
+	  
+    </div>
+   
+  </div>
+  </form>
+
+	<script src="main.js"></script> 
+</body>
+</html>
