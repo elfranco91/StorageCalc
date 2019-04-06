@@ -303,4 +303,66 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal4)
 
 })();
 
+//Convert IOPS to ThroughPut 
+(function() {
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function() {
+document.getElementById('cart-hplus').addEventListener('submit', estimateTotal5);
+
+	
+	
+	var btnEstimate5 = document.getElementById('btn-estimate5');
+	
+	btnEstimate5.disabled = true;
+	
+	state5.addEventListener('change', function() {
+	
+		if (state5.value === '') {
+			btnEstimate5.disabled = true;
+		} else {
+			btnEstimate5.disabled = false;
+		}
+	
+  });
+});
+
+		
+	function estimateTotal5(event) {
+		event.preventDefault();
+//				if (state4.value === '' && state3.value === '' && state.value === '' && state2.value ==='') {
+//		alert('Please select card type');
+//		
+//		state4.focus();
+//	} 
+
+		var blockSize = state5.value;
+		//pull the value from the ele1 index and call it convertCount
+		var IOPS = document.getElementById("ele5").value;
+		var throughput = 0;
+
+		//do the calculations
+		if (blockSize === '8K') {
+			throughput = IOPS * 8 / 1024;
+		} else if (blockSize === '32K') {
+			throughput = IOPS * 32 /1024;
+		} else if (blockSize === '64K') {
+			throughput = IOPS * 64 / 1024;
+		} else if (blockSize === '128K') {
+			throughput = IOPS * 128 / 1024;
+		} else {
+			return;
+
+		}
+
+
+		//concatenate string
+		// Grab the total
+     var estimate5 = 'Throughput: = '  + throughput + ' MB/s'; 
+	document.getElementById('txt-estimate5').value = estimate5;	
+		
+	}
+
+})();
+
 
