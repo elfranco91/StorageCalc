@@ -121,7 +121,8 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal2)
 	
 
 		var convertState = state2.value;
-		//pull the value from the ele1 index and call it convertCount
+		
+		//pull the value from the ele2 index and call it convertCount
 		var convertCount = document.getElementById("ele2").value;
 		var convertTotal = 0;
 
@@ -140,7 +141,7 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal2)
 
 		var convertType = ""
 
-		//if its ssd change the string
+		//type depending change the string
 
 		if (convertState  === "KM" ) {
 			convertType = 'Total MB/s = ';
@@ -191,7 +192,8 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal3)
 	} 
 
 		var raidState = state3.value;
-		//pull the value from the ele1 index and call it convertCount
+		
+		//pull the value from the ele3 index and call it raid count
 		var raidCount = document.getElementById("ele3").value;
 		var raidTotal = 0;
 
@@ -214,17 +216,12 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal3)
 		}
 
 
-		// name string for output to disktype
+		// name string for output to raidtype
 
-		var raidType = ""
+		var raidType = "Useable Space = "
 
 		//if its ssd change the string
 
-		if (raidState  === "TB" ) {
-			raidType = 'Useable Space = ';
-		} else {
-			raidType = 'Useable Space = '
-		}
 
 		//concatenate string
 		// Grab the total
@@ -296,7 +293,7 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal4)
 
 	
 
-		//concatenate string
+		//concatenate string.
 		// Grab the total
      var estimate4 = cardType  + cardTotal; 
 	document.getElementById('txt-estimate4').value = estimate4;	
