@@ -38,11 +38,11 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal);
 	function estimateTotal(event) {
 		event.preventDefault();
 
-			if (state.value === '' && state2.value ==='') {
-		alert('Please select disk type.');
-		
-		state.focus();
-	}
+//			if (state.value === '' && state2.value ==='') {
+//		alert('Please select disk type.');
+//		
+//		state.focus();
+//	}
 		//pull the value from the s-state index and call it diskState
 		var diskState = state.value;
 		//pull the value from the ele1 index and call it diskCount
@@ -113,11 +113,11 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal2)
 		
 	function estimateTotal2(event) {
 		event.preventDefault();
-				if (state2.value === '' && state.value === '') {
-		alert('Please select conversion type.');
-		
-		state2.focus();
-	}
+//				if (state2.value === '' && state.value === '') {
+//		alert('Please select conversion type.');
+//		
+//		state2.focus();
+//	}
 	
 
 		var convertState = state2.value;
@@ -185,11 +185,11 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal3)
 		
 	function estimateTotal3(event) {
 		event.preventDefault();
-				if (state3.value === '' && state.value === '' && state2.value ==='') {
-		alert('Please select raid type');
-		
-		state3.focus();
-	} 
+//				if (state3.value === '' && state.value === '' && state2.value ==='') {
+//		alert('Please select raid type');
+//		
+//		state3.focus();
+//	} 
 
 		var raidState = state3.value;
 		
@@ -259,11 +259,11 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal4)
 		
 	function estimateTotal4(event) {
 		event.preventDefault();
-				if (state4.value === '' && state3.value === '' && state.value === '' && state2.value ==='') {
-		alert('Please select card type');
-		
-		state4.focus();
-	} 
+//				if (state4.value === '' && state3.value === '' && state.value === '' && state2.value ==='') {
+//		alert('Please select card type');
+//		
+//		state4.focus();
+//	} 
 
 		var cardState = state4.value;
 		//pull the value from the ele1 index and call it convertCount

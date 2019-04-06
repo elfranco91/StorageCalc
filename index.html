@@ -93,8 +93,89 @@
        </div>
 	  
     </div>
-   
+    <!--	  2nd row   -->
+	  
+	   <div class="row" style ="border: 2px dotted white;">
+		   
+<!-- Convert IOPS to Throughput-->
+      
+		<div class = "col-lg-3 col-md-3 col-sm-3">
+		  <h4 style="color: white;">Convert IOPS to Throughput</h4>
+        <div class="group state">
+          <select id="s-state5" required>
+			  <option value="">- select -</option>
+			  <option value="8K" >8K Block</option>
+            <option value="32K">32K Block</option>
+            <option value="64K">64K Block</option>
+            <option value="128K">128K 125 IOPS</option>
+        
+          </select>
+          <input type="text" id="ele5" name="ele5" placeholder="IOPS " />
+        </div>
+		
+        <p>
+          <input type="submit" value="Total" id="btn-estimate5" disabled="" >
+          <input type="text" id="txt-estimate5" placeholder="0.00      ">
+        </p>
+        </div> 
+<!-- Place Holder-->
+		<div class ="col-lg-3 col-md-3 col-sm-3">
+		   <h4 style="color: white;">Place Holder</h4>
+        <div class="group state">
+          <select id="s-state6" required>
+            <option value="">- select -</option>
+            <option value="KM">KBPs - MBs</option>
+            <option value="MG">MBs - GBs</option>
+           
+          </select>
+          <input type="text" id="ele6" name="ele6" placeholder="Bits or Bytes" />
+        </div>
+        <p>
+          <input type="submit" value="Convert" id="btn-estimate6" disabled="" >
+          <input type="text" id="txt-estimate6" placeholder="0.00 " >
+        </p>
+       </div>
+<!-- Place Holder2-->
+		  <div class ="col-lg-3 col-md-3 col-sm-3">
+		   <h4 style="color: white;">Place Holder2</h4>
+        <div class="group state">
+          <select id="s-state7" required>
+            <option value="">- select -</option>
+            <option value="R10">Raid 10</option>
+            <option value="R10DM">Raid 10DM</option>
+			<option value="R5-5">Raid 5-5</option>
+			<option value="R5-9">Raid 5-9</option>
+			<option value="R6-6">Raid 6-6</option>
+            <option value="R6-10">Raid 6-10</option>
+           
+          </select>
+          <input type="text" id="ele7" name="ele7" placeholder="convert TB" />
+        </div>
+        <p><span></span>
+          <input type="submit" value="Convert" id="btn-estimate7" disabled="">
+          <input type="text" id="txt-estimate7" placeholder="0.00 ">
+        </p>
+       </div>
+		<!-- Place Holder3 -->
+		<div class ="col-lg-3 col-md-3 col-sm-3">
+		   <h4 style="color: white;">Place Holder 3</h4>
+        <div class="group state">
+          <select id="s-state8" required>
+            <option value="">- select -</option>
+            <option value="IS-16">FE-ISCSI-16GB</option>
+            <option value="MG">MBs - GBs</option>
+          
+          </select>
+			 <input type="text" id="ele8" name="ele8" placeholder="PortCount" />
+        </div>
+        <p>
+          <input type="submit" value="Convert" id="btn-estimate8" disabled="" >
+          <input type="text" id="txt-estimate8" placeholder="0.00 " >
+        </p>
+       </div>
+	  
   </div>
+  </div>	  
   </form>
 
 	<script src="resources/js/main.js"></script> 
