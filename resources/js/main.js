@@ -5,6 +5,7 @@ var state = document.getElementById('s-state');
 var state2 = document.getElementById('s-state2');
 var state3 = document.getElementById('s-state3');
 var state4 = document.getElementById('s-state4');
+var state5 = document.getElementById('s-state5');
 (function() {
 "use strict";
 
