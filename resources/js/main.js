@@ -6,6 +6,7 @@ var state2 = document.getElementById('s-state2');
 var state3 = document.getElementById('s-state3');
 var state4 = document.getElementById('s-state4');
 var state5 = document.getElementById('s-state5');
+
 (function() {
 "use strict";
 
@@ -197,18 +198,19 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal3)
 		//pull the value from the ele3 index and call it raid count
 		var raidCount = document.getElementById("ele3").value;
 		var raidTotal = 0;
+		
 
 		//do the calculations
 		if (raidState === 'R10') {
 			raidTotal = raidCount * 0.50;
 		} else if (raidState === 'R10DM') {
-			raidTotal = raidCount * 0.33;
+			raidTotal = raidCount / 3 ;
 		} else if (raidState === 'R5-5') {
 			raidTotal = raidCount * 0.20;
 		} else if (raidState === 'R5-9') {
-			raidTotal = raidCount * 0.11;
+			raidTotal = raidCount * 0.89;
 		} else if (raidState === 'R6-6') {
-			raidTotal = raidCount  * 0.66;
+			raidTotal = raidCount * 0.66;
 		} else if (raidState === 'R6-10') {
 			raidTotal = raidCount * 0.80;
 		} else {
@@ -220,20 +222,21 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal3)
 		// name string for output to raidtype
 
 		var raidType = "Useable Space = "
-
+      
 		//if its ssd change the string
 
 
 		//concatenate string
 		// Grab the total
-      var estimate3 = raidType  + raidTotal; 
+      var estimate3 = raidType  + raidTotal + " TB"; 
+	
 	document.getElementById('txt-estimate3').value = estimate3;	
 	}
 
 
 })();
 
-//card calc
+//Port/card calc
 (function() {
 "use strict";
 
@@ -270,25 +273,50 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal4)
 		//pull the value from the ele1 index and call it convertCount
 		var portCount = document.getElementById("ele4").value;
 		var cardTotal = 0;
+		var portThroughput = ""
 
 		//do the calculations
-		if (cardState === 'IS-16') {
-			cardTotal = portCount * 1.6 ;
-		} else if (cardState === 'R10DM') {
-			cardTotal = portCount / 3;
-		} else if (cardState === 'R6') {
-			cardTotal = portCount - portCount * 0.;
-		} else if (cardState === 'R5-9') {
-			cardTotal = portCount - portCount * 0.11;
+		if (cardState === 'IS-1') {
+			
+			cardTotal = portCount * 125;
+		} else if (cardState === 'IS-10') {
+			cardTotal = portCount * 1;
+		} else if (cardState === 'IS-40') {
+			cardTotal = portCount * 4;
+		} else if (cardState === 'FC-8') {
+			cardTotal = portCount * portCount * 1;
+		} else if (cardState === 'FC-16') {
+			cardTotal = portCount * 2;
+		} else if (cardState === 'BE-6') {
+			cardTotal = portCount * 2.3;
+		} else if (cardState === 'BE-12') {
+			cardTotal = portCount * 4.6;
 		} else {
 			return;
 
 		}
-
+        
+		if (cardState == 'IS-1') {
+			portThroughput = "Port 125 MB/s ";
+		} else if (cardState === 'IS-10'){
+			portThroughput = "Port 1GB/s ";
+		} else if (cardState === 'IS-40'){
+			portThroughput = "Port 4GB/s ";
+		} else if (cardState === 'FC-8'){
+			portThroughput = "Port 1GB/s ";
+		} else if (cardState === 'FC-16'){
+			portThroughput = "Port 2GB/s ";
+		} else if (cardState === 'BE-6'){
+			portThroughput = "Port 2.3GB/s ";
+		} else if (cardState === 'BE-12'){
+			portThroughput = "Port 4.6GB/s ";
+		} else {
+			return;
+		}
 
 		// name string for output to disktype
 
-		var cardType = "Card Throughput "
+	
 
 		//if its ssd change the string
 
@@ -296,7 +324,7 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal4)
 
 		//concatenate string.
 		// Grab the total
-     var estimate4 = cardType  + cardTotal; 
+     var estimate4 = portThroughput  + "card " + cardTotal + " GB/s"; 
 	document.getElementById('txt-estimate4').value = estimate4;	
 		
 	}

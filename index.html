@@ -76,12 +76,17 @@
        </div>
 		<!-- Card throughput -->
 		<div class ="col-lg-3 col-md-3 col-sm-3">
-		   <h4 style="color: white;">IO Card Throughput</h4>
+		   <h4 style="color: white;">Port/Card Throughput</h4>
         <div class="group state">
           <select id="s-state4" required>
             <option value="">- select -</option>
-            <option value="IS-16">FE-ISCSI-16GB</option>
-            <option value="MG">MBs - GBs</option>
+            <option value="IS-1">FE-ISCSI-1Gb/s</option>
+            <option value="IS-10">FE-ISCSI-10Gb/s</option>
+			<option value="IS-40">FE-ISCSI-40Gb/s</option>
+            <option value="FC-8">FE-FibreChannel-8Gb/s</option>
+			<option value="FC-16">FE-FibreChannel-16Gb/s</option>
+			<option value="BE-6">BE-SAS-6Gb/s</option>
+			<option value="BE-12">BE-SAS-12Gb/s</option>
           
           </select>
 			 <input type="text" id="ele4" name="ele4" placeholder="PortCount" />
@@ -107,7 +112,7 @@
 			  <option value="8K" >8K Block</option>
             <option value="32K">32K Block</option>
             <option value="64K">64K Block</option>
-            <option value="128K">128K 125 IOPS</option>
+            <option value="128K">128K </option>
         
           </select>
           <input type="text" id="ele5" name="ele5" placeholder="IOPS " />
