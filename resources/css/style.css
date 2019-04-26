@@ -6,6 +6,10 @@ html {
 }
 
 body {
-	background-color: navy;
+
 	
+}
+
+.divBor {
+	border: black 2px dashed;
 }

@@ -14,11 +14,11 @@
    <form novalidate class="cart" id="cart-hplus">
   <div class="container-fluid">
     
-    <div class="row" style ="border: 2px dotted white;">
+    <div class="row">
      
-      
-		<div class = "col-lg-3 col-md-3 col-sm-3">
-		  <h4 style="color: white;">Disk calculator</h4>
+       
+		<div class = "col-lg-3 col-md-3 col-sm-3 divBor">
+		  <h4>Disk calculator</h4>
         <div class="group state">
           <select id="s-state" required>
             <option value="">- select -</option>
@@ -34,11 +34,13 @@
         <p>
           <input type="submit" value="Total" id="btn-estimate" disabled="" >
           <input type="text" id="txt-estimate" placeholder="0.00 ">
+		<p>SSD will show total throughput <br> Spinning Media will show total IOPS</p>	
         </p>
+			
         </div> 
 <!-- bits and bytes converter-->
-		<div class ="col-lg-3 col-md-3 col-sm-3">
-		   <h4 style="color: white;">Bits and Bytes Converter</h4>
+		<div class ="col-lg-3 col-md-3 col-sm-3 divBor">
+		   <h4>Bits and Bytes Converter</h4>
         <div class="group state">
           <select id="s-state2" required>
             <option value="">- select -</option>
@@ -54,8 +56,8 @@
         </p>
        </div>
 <!-- Raid Calculator-->
-		  <div class ="col-lg-3 col-md-3 col-sm-3">
-		   <h4 style="color: white;">Raid Overhead Calculator</h4>
+		  <div class ="col-lg-3 col-md-3 col-sm-3 divBor">
+		   <h4>Raid Overhead Calculator</h4>
         <div class="group state">
           <select id="s-state3" required>
             <option value="">- select -</option>
@@ -73,10 +75,11 @@
           <input type="submit" value="Convert" id="btn-estimate3" disabled="">
           <input type="text" id="txt-estimate3" placeholder="0.00 ">
         </p>
+	    <p>Will show total usable space after Raid</p>	
        </div>
 		<!-- Card throughput -->
-		<div class ="col-lg-3 col-md-3 col-sm-3">
-		   <h4 style="color: white;">Port/Card Throughput</h4>
+		<div class ="col-lg-3 col-md-3 col-sm-3 divBor">
+		   <h4 >Port/Card Throughput</h4>
         <div class="group state">
           <select id="s-state4" required>
             <option value="">- select -</option>
@@ -95,6 +98,8 @@
           <input type="submit" value="Convert" id="btn-estimate4" disabled="" >
           <input type="text" id="txt-estimate4" placeholder="0.00 " >
         </p>
+			<p>Will show total throughput per port <br>
+				and per card</p>	
        </div>
 	  
     </div>
@@ -104,8 +109,8 @@
 		   
 <!-- Convert IOPS to Throughput-->
       
-		<div class = "col-lg-3 col-md-3 col-sm-3">
-		  <h4 style="color: white;">Convert IOPS to Throughput</h4>
+		<div class = "col-lg-3 col-md-3 col-sm-3 divBor">
+		  <h4>Convert IOPS to Throughput</h4>
         <div class="group state">
           <select id="s-state5" required>
 			  <option value="">- select -</option>
@@ -122,10 +127,11 @@
           <input type="submit" value="Total" id="btn-estimate5" disabled="" >
           <input type="text" id="txt-estimate5" placeholder="0.00      ">
         </p>
+			<p> will show total throughput for the selected block size</p>	
         </div> 
 <!-- Place Holder-->
-		<div class ="col-lg-3 col-md-3 col-sm-3">
-		   <h4 style="color: white;">Place Holder</h4>
+		<div class ="col-lg-3 col-md-3 col-sm-3 divBor">
+		   <h4>Replication MTU window</h4>
         <div class="group state">
           <select id="s-state6" required>
             <option value="">- select -</option>
@@ -141,8 +147,8 @@
         </p>
        </div>
 <!-- Place Holder2-->
-		  <div class ="col-lg-3 col-md-3 col-sm-3">
-		   <h4 style="color: white;">Place Holder2</h4>
+		  <div class ="col-lg-3 col-md-3 col-sm-3 divBor">
+		   <h4>Place Holder2</h4>
         <div class="group state">
           <select id="s-state7" required>
             <option value="">- select -</option>
@@ -162,8 +168,8 @@
         </p>
        </div>
 		<!-- Place Holder3 -->
-		<div class ="col-lg-3 col-md-3 col-sm-3">
-		   <h4 style="color: white;">Place Holder 3</h4>
+		<div class ="col-lg-3 col-md-3 col-sm-3 divBor">
+		   <h4>Place Holder 3</h4>
         <div class="group state">
           <select id="s-state8" required>
             <option value="">- select -</option>
